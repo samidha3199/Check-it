@@ -1,0 +1,281 @@
+/* * Basics Styles  */
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    line-height: 1.7;
+}
+
+a{
+    color: #000;
+}
+
+img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* * Basics Styles  */
+
+/* * Common Class Styles  */
+
+.container{
+    width: 85%;
+    margin: 0 auto;
+}
+
+/* * Common Class Styles  */
+
+/* * Navbar Styles  */
+
+nav{
+    height: 5rem;
+    width: 100%;
+    /* background-color: orange; */
+}
+
+.nav__container{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__logo{
+    width: 100px;
+}
+
+.nav__items{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.nav__items li{
+    cursor: pointer;
+}
+
+.nav__items li a{
+    color: #282c3f;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.nav__items li a span{
+    color: #282c3f;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.nav__items li a:hover{
+    color: rgb(252,128,25);
+}
+
+.nav__items li a:hover span{
+    color: rgb(252,128,25);
+}
+
+/* * Navbar Styles  */
+
+/* *Body Styles  */
+
+.body__container{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.filter__search-container{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.button{
+    padding: 15px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    display: block;
+    border: 0px;
+    font-weight: 700;
+    box-shadow: 0px 0px 14px -7px #f09819;
+    background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%);
+    cursor: pointer;
+}
+
+.filter__search-container button{
+    padding: 15px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    display: block;
+    border: 0px;
+    font-weight: 700;
+    box-shadow: 0px 0px 14px -7px #f09819;
+    background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%);
+    cursor: pointer;
+}
+
+.restaurant__container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3rem;
+}
+
+.search__Input{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.search__input{
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 12px 20px;
+    font-size: 1.15rem;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.search__Input .search__input{
+    background-color: transparent;
+}
+
+/* * Body Styles  */
+
+/* *Restaurant Card Styles  */
+
+.card{
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    border: .1rem solid #e8e8e8;
+    border-radius: 1.5rem;
+    /* width: 19.7rem; */
+    height: auto;
+    transition: all .3s;
+}
+
+.card:hover{
+    border-color: rgb(232, 232, 232);
+    box-shadow: rgba(28, 28, 28, 0.12) 0px 0.4rem 1.8rem;
+}
+
+.card__image{
+    height: 350px;
+    /* width: 300px; */
+    
+}
+
+.card__image img{
+    height: 100%;
+    max-width: 100%;
+    border-radius: 1.5rem;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.card-title h1{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.3px;
+    color: rgba(2, 6, 12, 0.75);
+    overflow: hidden;
+    width: 100%;
+    overflow-wrap: break-word;
+}
+
+.card-text{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-bottom: 5px;
+}
+
+.card-text div{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.card-text div span{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.3px;
+    color: rgba(2, 6, 12, 0.75);
+}
+
+.card-text p:first-child{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.1px;
+    color: rgb(241, 87, 0);
+}
+
+.card-text p:last-child{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.3px;
+    color: rgba(2, 6, 12, 0.75);
+}
+
+
+/* *Restaurant Card Styles  */
+
+/* * Shimmer Cards Styles  */
+
+.shimmer__container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3rem;
+}
+
+.shimmer__card{
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    background: #e8e8e8;
+    border-radius: 1.5rem;
+    /* width: 19.7rem; */
+    height: 400px;
+}
+
+/* * Shimmer Cards Styles  */
+
+.about__container,.contact__container,.error__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
